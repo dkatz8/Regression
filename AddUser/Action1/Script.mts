@@ -4,15 +4,14 @@ Browser("Login -").Page("Login -").WebEdit("password").SetSecure "69f890204d61a3
 Browser("Login -").Page("Login -").WebButton("Sign in").Click @@ script infofile_;_ZIP::ssf4.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebButton("OK").Click @@ script infofile_;_ZIP::ssf5.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebButton("User").Click @@ script infofile_;_ZIP::ssf6.xml_;_
-Browser("Login -").Page("Workspaces - Core Software").WebEdit("First name").Set "dudu" @@ script infofile_;_ZIP::ssf7.xml_;_
+Browser("Login -").Page("Workspaces - Core Software").WebEdit("First name").Set Parameter("Name") @@ script infofile_;_ZIP::ssf7.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebElement("WebElement").Click @@ script infofile_;_ZIP::ssf8.xml_;_
-Browser("Login -").Page("Workspaces - Core Software").WebEdit("Last name").Set "katz" @@ script infofile_;_ZIP::ssf9.xml_;_
+Browser("Login -").Page("Workspaces - Core Software").WebEdit("Last name").Set Parameter("LastName") @@ script infofile_;_ZIP::ssf9.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebElement("WebElement_2").Click @@ script infofile_;_ZIP::ssf10.xml_;_
-Browser("Login -").Page("Workspaces - Core Software").WebEdit("Email").Set "dkatz@opentext.com" @@ script infofile_;_ZIP::ssf11.xml_;_
+Browser("Login -").Page("Workspaces - Core Software").WebEdit("Email").Set Parameter("Email") @@ script infofile_;_ZIP::ssf11.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebElement("WebElement_3").Click @@ script infofile_;_ZIP::ssf12.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebEdit("Phone").Set "1" @@ script infofile_;_ZIP::ssf13.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebElement("Roles:").Click @@ script infofile_;_ZIP::ssf14.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebCheckBox("DevOps Admin").Set "ON" @@ script infofile_;_ZIP::ssf15.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebButton("OK_2").Click @@ script infofile_;_ZIP::ssf16.xml_;_
-Browser("Login -").Page("Workspaces - Core Software").WebButton("Add      Add").Click @@ script infofile_;_ZIP::ssf17.xml_;_
-Browser("Login -").Page("Workspaces - Core Software").WebElement("dudu").Click @@ script infofile_;_ZIP::ssf18.xml_;_
+Browser("Login -").Page("Workspaces - Core Software").WebButton("Add      Add").Click @@ script infofile_;_ZIP::ssf18.xml_;_
