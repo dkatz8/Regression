@@ -1,4 +1,21 @@
-﻿Browser("Login -").Page("Login -").WebEdit("federateLoginName").Set "mqm_rnd@hpe.com" @@ script infofile_;_ZIP::ssf1.xml_;_
+﻿﻿Dim iURL, objShell, fileSystemObj, browserPath
+
+iURL = Parameter("URL")
+Set objShell = CreateObject("Shell.Application")
+Set fileSystemObj = CreateObject("Scripting.FileSystemObject")
+
+browserPath = "C:\Program Files\Mozilla Firefox\firefox.exe"
+If Not fileSystemObj.FileExists(browserPath) Then
+    browserPath = "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"
+    If Not fileSystemObj.FileExists(browserPath) Then
+        Reporter.ReportEvent micFail, "Browser Launch", "Firefox not found on this machine"
+        ExitTest
+    End If
+End If
+
+objShell.ShellExecute browserPath, iURL, "", "", 1
+Wait(5)
+Browser("Login -").Page("Login -").WebEdit("federateLoginName").Set "mqm_rnd@hpe.com"
 Browser("Login -").Page("Login -").WebButton("Continue").Click @@ script infofile_;_ZIP::ssf2.xml_;_
 Browser("Login -").Page("Login -").WebEdit("password").SetSecure "69f890204d61a3ca964cad5eae13fb295318972f5f041409332328c7229473bcf0a0" @@ script infofile_;_ZIP::ssf3.xml_;_
 Browser("Login -").Page("Login -").WebButton("Sign in").Click @@ script infofile_;_ZIP::ssf4.xml_;_
