@@ -19,7 +19,6 @@ Browser("Login -").Page("Login -").WebEdit("federateLoginName").Set "mqm_rnd@hpe
 Browser("Login -").Page("Login -").WebButton("Continue").Click
 Browser("Login -").Page("Login -").WebEdit("password").SetSecure "69fc9dc1a5705566522fe0b435b7ce24ff521017ce95db0240ff56456e99d49c8184" @@ script infofile_;_ZIP::ssf2.xml_;_
 Browser("Login -").Page("Login -").WebButton("Sign in").Click @@ script infofile_;_ZIP::ssf3.xml_;_
-Browser("Login -").Page("Workspaces - Core Software").WebElement("NewRun manual tests autonomous").Click @@ script infofile_;_ZIP::ssf4.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebButton("User").Click @@ script infofile_;_ZIP::ssf9.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebEdit("First name").Set "ikaro@opentext.com" @@ script infofile_;_ZIP::ssf10.xml_;_
 Browser("Login -").Page("Workspaces - Core Software").WebElement("WebElement").Click @@ script infofile_;_ZIP::ssf11.xml_;_
